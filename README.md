@@ -6,6 +6,6 @@ this will be a side project for me to work on in my spare time
 
 ### roadmap
 
-- create a welcome message
+- create a welcome message [x]
 - show current weather
 - show calendar month view 
