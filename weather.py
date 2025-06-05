@@ -76,9 +76,9 @@ print(f"Sunset: {sunset}")
 print("\n")
 print(f"Next Few Days...")
 
-for forecast in data['list']:
+for forecast in data['list'][:15:3]: # limits 15 and step is 3 or skips 3
     print(f"Date: {forecast['dt_txt']}")
-    print(f"High: {to_fahrenheit(forecast['main']['temp_max'])}{degrees_fahrenheit} / Low: {to_fahrenheit(forecast['main']['temp_min'])}{degrees_fahrenheit}")
+    print(f"Temperature: {to_fahrenheit(forecast['main']['temp_max'])}{degrees_fahrenheit}")
     print(f"Conditions: {forecast['weather'][0]['description'].title()}")
     print(f"Rain Chance: {forecast['pop'] * 100:.0f}%\n")
 
